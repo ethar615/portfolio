@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!-- By: Ethar Almaghrabi -->
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+</head>
+<style>
+        nav {
+            background-color: #3f0101;  
+        }
+
+        h2{
+            color: #3f0101;
+            text-shadow: -4px 2px 8px #3f0101;
+        }
+        footer {
+            background-color: #3f0101;
+        }
+
+        .arrow {
+            position: absolute;
+            top: 20px;
+            font-size: 24px; /* arrow size */
+            font-weight: bold;
+            color: #3f0101be; /* arrow color */
+            text-decoration: none;
+        }
+
+        .arrow.left {
+            left: 20px; /* position on the left */
+            color: antiquewhite;
+        }
+
+        .arrow.right {
+            right: 20px; /* position on the right */
+        } 
+        /* style for the form container */
+        main {
+            display: flex;
+            width: 100%;
+        }
+
+        section {
+            width: 70%;
+            padding: 20px;
+            box-sizing: border-box; 
+        }
+
+        .image-container {
+            width: 30%;
+            background-image: url('Images/back.jpg'); 
+            background-size: cover;
+            background-position: center;
+            height: 100vh; /* full height */
+        }
+
+        /* flexbox for form elements */
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        /*textarea */
+        textarea {
+            width: 100%;
+            height: 100px; /* fixed height for message */
+            resize: none; /* no resizing */
+        }
+        
+</style>
+<body>
+    <header>
+        <nav>
+            <h4>
+                <a href="AboutMe.html"> <img src="Images/me.jpg" alt="About Me" height="62" width="62"> </a>
+                <a href="Index.html">Home</a>
+                <a href="AboutMe.html">About</a>
+                <a href="Project.html">Projects</a>
+                <a href="Contact.html">Contact</a>
+            </h4>
+        </nav>
+        <a href="Index.html" class="arrow right">&#8594;</a> <!-- right arrow -->
+        <a href="Project.html" class="arrow left">&#8592;</a> <!-- left arrow -->
+                      
+        <main>
+            <section class="image-container"></section>
+            <article>
+                <h2>To personally contact me, use the following form</h2>
+                <form action="/MessageSubmitted.html">
+                    <fieldset>
+                        <legend>Your Information</legend>
+                        <label for="Name">Your Name:</label><br>
+                        <input type="text" id="Name" name="Name" required pattern="[a-zA-Z ]+" placeholder="Full Name"><br>
+    
+                        <label for="Email">Your Email:</label><br>
+                        <input type="email" id="Email" name="Email" required pattern=".*@.*" placeholder="Enter your email address"><br>
+    
+                        <label for="Number">Cell Number:</label><br>
+                        <input type="tel" id="Number" name="Number" required pattern="\d{10}" placeholder="Enter 10 digit cell no."><br>
+    
+                        <label for="Captcha">What's 5+2? (Captcha Validator)</label><br>
+                        <input type="text" id="Captcha" name="Captcha" required pattern="^7$"><br>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Get in Touch</legend>
+                        <label for="Message">Message:</label><br>
+                        <textarea id="Message" name="Message" placeholder="Any questions, comments, or queries..."></textarea><br>
+                    </fieldset>
+    
+                    <input type="submit" value="Submit">
+                </form>
+            </article>
+        </main>
+        
+    </header>
+    <footer>
+        <p>Copyright © By Ethar Almaghrani. All rights reserved</p>
+        <a href="AboutMe.html"> <img src="Images/me.jpg" alt="About Me" height="62" width="62"> </a>
+        <p>Contact Me: <a href="mailto:ethar.almaghrabi@ontariotechu.ca">ethar.almaghrabi@ontariotechu.ca</a></p>
+    </footer>
+</body>
+</html>

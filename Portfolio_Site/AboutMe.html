@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- By: Ethar Almaghrabi -->
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>About Me</title>
+    <style>
+        body {
+            background: rgb(232,216,196);
+            background: linear-gradient(0deg, rgba(232,216,196,1) 0%, rgba(63,1,1,1) 80%);
+            background-attachment: fixed;
+        }
+
+        nav {
+            background-color: #3f0101;  
+        }
+        h2{
+            text-shadow: -4px 2px 8px #e8d8c4;
+        }
+
+        p{
+            font-family: Garamond, serif;
+            padding: 5px;
+            color:#e8d8c4;
+            font-size: 20px;
+            width: 90%;             
+        }
+
+        footer {
+            background-color: #3f0101;
+        }
+
+        .arrow {
+            position: absolute;
+            top: 20px;
+            font-size: 24px; /* arrow size */
+            font-weight: bold;
+            color: #e8d8c4; /* arrow color */
+            text-decoration: none;
+        }
+
+        .arrow.left {
+            left: 20px; /* position on the left */
+        }
+
+        .arrow.right {
+            right: 20px; /* position on the right */
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h4>
+                <a href="AboutMe.html"> <img src="Images/me.jpg" alt="About Me" height="62" width="62"> </a>
+                <a href="Index.html">Home</a>
+                <a href="AboutMe.html">About</a>
+                <a href="Project.html">Projects</a>
+                <a href="Contact.html">Contact</a>
+            </h4>
+        </nav>
+        <a href="Project.html" class="arrow right">&#8594;</a> <!-- right arrow -->
+        <a href="Index.html" class="arrow left">&#8592;</a> <!-- left arrow -->
+    </header>
+    <main>
+        <article>
+            <header>
+                <h2>About Me</h2>
+
+            </header>
+            <p>My name is Ethar Almaghrabi, and Im a second year student at Ontario Tech University pursuing a degree in IT: Technology Management.</p>
+            <p>I am passionate about technology and solving problems through code. In my spare time I enjoy learning new programming languages and exploring the possibilities of artificial intelligence in different industries.</p>
+            <p>In my free time, I enjoy photography, as well as cooking, hiking, and reading thriller/science fiction books.</p>
+        </article>
+
+        <section>
+            <h2>A Short About Me Video</h2>
+            <video controls poster="Images/Poster.jpg" >
+                <source src="Images/ShortVideo.mp4" type="video/mp4">
+            </video>
+        </section>
+
+    </main>
+    <footer>
+        <p>Copyright © By Ethar Almaghrabi. All rights reserved</p>
+        <a href="AboutMe.html"> <img src="Images/me.jpg" alt="Link to About Me page" height="62" width="62"> </a>
+        <p>Contact Me: <a href="mailto:ethar.almaghrabi@ontariotechu.ca">ethar.almaghrabi@ontariotechu.ca</a></p>
+    </footer>
+</body>
+</html>

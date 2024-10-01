@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- By: Ethar Almaghrabi -->
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <style>
+        h2{
+            text-shadow: -4px 2px 8px #e8d8c4;
+        }
+        nav {
+            background-color: #3f0101;  
+        }
+        footer {
+            background-color: #3f0101;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            position: relative;
+
+        }
+        body{
+            background: rgb(159,25,25);
+            background: radial-gradient(circle, rgba(159,25,25,1) 0%, rgba(0,0,0,1) 100%);
+        }
+        li{
+            font-family: Garamond, serif;
+            padding: 5px;
+            color:#e8d8c4;
+            font-size: 22px; 
+        }
+        p{
+            font-family: Garamond, serif;
+            padding: 5px;
+            color:#e8d8c4;
+            font-size: 20px;             
+        }
+        .arrow {
+            position: absolute;
+            top: 20px;
+            font-size: 24px; /* arrow size */
+            font-weight: bold;
+            color: #e8d8c4; /* arrow color */
+            text-decoration: none;
+        }
+
+        .arrow.left {
+            left: 20px; /* position on the left */
+        }
+
+        .arrow.right {
+            right: 20px; /* position on the right */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h4>
+                <a href="AboutMe.html"> <img src="Images/me.jpg" alt="About Me" height="62" width="62"> </a>
+                <a href="Index.html">Home</a>
+                <a href="AboutMe.html">About</a>
+                <a href="Project.html">Projects</a>
+                <a href="Contact.html">Contact</a>
+            </h4>
+        </nav>
+        <a href="Contact.html" class="arrow right">&#8594;</a> <!-- right arrow -->
+        <a href="AboutMe.html" class="arrow left">&#8592;</a> <!-- left arrow -->   
+        <main>
+            <h2>My Completed Projects</h2>
+            <article>
+                <div style="width: 45%; float: left; text-align: left; background-image: url('Images/vintage.png'); background-size: cover; padding: 0px;">
+                    <h4 style="font-family: Garamond, serif; color: #e8d8c4; font-size: 40px; margin-left: 270px; margin-top: 90px">Java</h4>
+
+                    <ul style="margin-left: 90px; width: 60%; margin-bottom: 38%">
+                        <li>Brick Breaker Game</li>
+                        <p>The more you destroy the bricks, the more you score.</p>
+                        <li>Attendance Management System</li>
+                        <p>It uses MySQL as a backend for database management</p>
+                        <li>Banking Application</li>
+                        <p>A simple banking operations like deposit, withdrawal, checking balance, exit, etc.</p>
+                    </ul>
+                </div>
+        
+                <div style="width: 45%; float: right; text-align: left; background-image: url('Images/vintage.png'); background-size: cover; padding: 0px; margin-left: -5%;">
+                    <h4 style="font-family: Garamond, serif; color: #e8d8c4; font-size: 40px; margin-left: 240px; margin-top: 90px;">Python</h4>
+            
+                    <ul style="margin-left: 90px; width: 60%; margin-bottom: 38%">
+                        <li>Advanced Calculator</li>
+                        <p>Calculates the unknown value of x and y</p>
+                        <li>Tic-Tac-Toe Game</li>
+                        <p>Where 2 players compete to get first to 3 (x and o), used Tkinter</p>
+                        <li>Sudoku solver</li>
+                        <p>Solves a Sudoku puzzle in a matter of seconds</p>
+                    </ul>
+                </div>
+            </article>
+            
+        </main>
+        
+        
+    </header>
+    <footer>
+        <p>Copyright © By Ethar Almaghrani. All rights reserved</p>
+        <a href="AboutMe.html"> <img src="Images/me.jpg" alt="About Me" height="62" width="62"> </a>
+        <p>Contact Me: <a href="mailto:ethar.almaghrabi@ontariotechu.ca">ethar.almaghrabi@ontariotechu.ca</a></p>
+    </footer>
+</body>
+</html>
