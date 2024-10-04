@@ -161,5 +161,50 @@ footer img {
   }
 
 
+.project{
+    width: 45%; 
+    float: left; 
+    text-align: center; 
+    padding: 0px;
+    
+}
+
+.project h4{
+    font-family: Garamond, serif; 
+    color: #e8d8c4; 
+    font-size: 30px; 
+    margin-left: 40%; 
+    margin-top: 90px
+}
+
+.project ul{
+    margin-left: 10%; 
+    width: 80%; 
+    margin-bottom: 38%;
+}
   
+
+.project1{
+    width: 45%; 
+    float: right; 
+    text-align: left; 
+    background-size: cover; 
+    padding: 0px;
+    margin-left: -5%;
+    
+}
+
+.project1 h4{
+    font-family: Garamond, serif; 
+    color: #e8d8c4; 
+    font-size: 30px; 
+    margin-left: 45%; 
+    margin-top: -40px
+}
+
+.project1 ul{
+    margin-left: 26%; 
+    width: 80%; 
+    margin-bottom: 38%;
+}
 

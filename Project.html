@@ -82,6 +82,42 @@
                 font-size: 24px; /* Smaller heading on mobile */
                 margin: 10px 0; /* Space above and below */
             }
+            h2{
+                font-size: 35px;
+                color: #e8d8c4;
+                text-align: center;
+            }
+            
+        }
+        @media (max-width: 1024px) {
+            nav h4 {
+                display:block;
+                flex-direction: row; 
+                align-items: center; /* center items */
+            }
+            nav a {
+                margin: 5px 0; /* Space items vertically */
+                font-size: 18px; /* Adjust font size */
+            }
+            main {
+                padding: 0 10px; /* Add padding for mobile */
+            }
+            article {
+                display: flex;
+                flex-direction:row; /* Stack articles vertically */
+                align-items: center; /* Center articles */
+            }
+
+            h4 {
+                font-size: 24px; /* Smaller heading on mobile */
+                margin: 10px 0; /* Space above and below */
+            }
+            h2{
+                font-size: 35px;
+                color: #e8d8c4;
+                text-align: center;
+            }
+            
         }
     </style>
 </head>
@@ -103,10 +139,10 @@
     <main>
         <h2>My Completed Projects</h2>
         <article>
-            <div class="project" style="width: 45%; float: left; text-align: left; background-image: url('Images/vintage.png'); background-size: cover; padding: 0px;">
-                <h4 style="font-family: Garamond, serif; color: #e8d8c4; font-size: 40px; margin-left: 270px; margin-top: 90px">Java</h4>
+            <div class="project">
+                <h4>Java</h4>
     
-                <ul style="margin-left: 10%; width: 80%; margin-bottom: 38%;">
+                <ul>
                     <li>
                         Brick Breaker Game
                         <p>The more you destroy the bricks, the more you score.</p>
@@ -122,10 +158,10 @@
                 </ul>
             </div>
     
-            <div class="project" style="width: 45%; float: right; text-align: left; background-image: url('Images/vintage.png'); background-size: cover; padding: 0px; margin-left: -5%;">
-                <h4 style="font-family: Garamond, serif; color: #e8d8c4; font-size: 40px; margin-left: 240px; margin-top: 90px;">Python</h4>
+            <div class="project1">
+                <h4>Python</h4>
     
-                <ul style="margin-left: 90px; width: 60%; margin-bottom: 38%;">
+                <ul>
                     <li>
                         Advanced Calculator
                         <p>Calculates the unknown value of x and y.</p>

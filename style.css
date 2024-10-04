@@ -204,3 +204,56 @@ legend{
 .button-container {
     text-align: center; /* Center text */
 }
+
+.project{
+    width: 45%; 
+    float: left; 
+    text-align: left; 
+    background-image: url('Images/vintage.png'); 
+    background-size: cover; 
+    padding: 0px;
+    
+}
+
+.project h4{
+    font-family: Garamond, serif; 
+    color: #e8d8c4; 
+    font-size: 40px; 
+    margin-left: 270px; 
+    margin-top: 90px
+}
+
+.project ul{
+    margin-left: 10%; 
+    width: 80%; 
+    margin-bottom: 38%;
+}
+
+
+.project1{
+    width: 45%; 
+    float: right; 
+    text-align: left; 
+    background-image: url('Images/vintage.png'); 
+    background-size: cover; 
+    padding: 0px;
+    margin-left: -5%;
+    
+}
+
+.project1 h4{
+    font-family: Garamond, serif; 
+    color: #e8d8c4; 
+    font-size: 40px; 
+    margin-left: 240px; 
+    margin-top: 90px
+}
+
+.project1 ul{
+    margin-left: 90px; 
+    width: 60%; 
+    margin-bottom: 38%;
+}
+
+
+        

@@ -67,14 +67,14 @@ h2 {
 
     body:not(.no-footer) footer {
         font-weight: 200; /* Makes the text a little bit bold */
-        font-size: large; /* Maintain large font size */
+        font-size: 15px; /* Maintain large font size */
         border-radius: 20px;
         display: flex; /* Flexible layout of the footer (horizontally) */
         justify-content: space-between; /* Space items evenly */
         align-items: center; /* Center items vertically */
         padding: 10px;
         color: #e8d8c4;
-        flex-wrap: wrap; /* Allow wrapping of items */
+        flex-wrap: nowrap; /* Allow wrapping of items */
     }
 
     footer a {
@@ -91,39 +91,10 @@ h2 {
         margin-bottom: 0px;
         display: block; /* Make the image a block element */
         margin-left: auto; /* Center the image horizontally */
-        margin-right: auto; /* Center the image horizontally */
+        margin-right: 20px; /* Center the image horizontally */
     }
 }
 
-/* Mobile view: for screens with max-width 600px */
-@media (max-width: 600px) {
-    body {
-        font-size: 14px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
-    .form-row {
-        display: flex;
-        flex-direction: column; /* Stack fields vertically on mobile */
-        align-items: flex-start; /* Align form elements left */
-    }
-
-    .cell-number, .captcha {
-        width: 100%; /* Full width for input fields */
-    }
-
-    nav a {
-        font-size: medium; /* Adjust font size for mobile */
-        margin: 10px; /* Adjust margin for mobile */
-    }
-    
-    nav {
-        justify-content: space-around; /* Space items evenly on mobile */
-    }
-}
 
 /*Button on the main index page*/
 .button-86 {
@@ -175,3 +146,49 @@ h2 {
     border-radius: 50px;
   }
 
+.project{
+    width: 45%; 
+    float: left; 
+    text-align: center; 
+    padding: 0px;
+    
+}
+
+.project h4{
+    font-family: Garamond, serif; 
+    color: #e8d8c4; 
+    font-size: 30px; 
+    margin-left: 40%; 
+    margin-top: 90px
+}
+
+.project ul{
+    margin-left: 10%; 
+    width: 80%; 
+    margin-bottom: 38%;
+}
+  
+
+.project1{
+    width: 45%; 
+    float: right; 
+    text-align: center; 
+    padding: 0px;
+    margin-left: -5%;
+    margin-top: 14%;
+    
+}
+
+.project1 h4{
+    font-family: Garamond, serif; 
+    color: #e8d8c4; 
+    font-size: 30px; 
+    margin-left: 45%; 
+    margin-top: -40px
+}
+
+.project1 ul{
+    margin-left: 26%; 
+    width: 80%; 
+    margin-bottom: 38%;
+}
