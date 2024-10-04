@@ -1,0 +1,177 @@
+/* Tablet view: for screens between 601px and 1024px */
+body {
+    font-size: 16px; /* Base font size for larger screens */
+}
+
+h2 {
+    font-size: 24px; /* Base font size for h2 on larger screens */
+}
+
+/* Tablet-friendly adjustments */
+@media (max-width: 1024px) {
+    body {
+        font-size: 14px; /* Adjust font size for tablet */
+    }
+
+    h2 {
+        font-size: 20px; /* Adjust h2 size for tablet */
+    }
+
+    .form-row {
+        display: flex;
+        flex-direction: column; /* Stack fields vertically on tablet */
+        align-items: flex-start; /* Align form elements left */
+    }
+
+    .cell-number, .captcha {
+        width: 100%; /* Full width for input fields */
+    }
+
+    nav {
+        display: flex; /* Use flexbox for horizontal layout */
+        flex-direction: row; /* Align items in a row */
+        justify-content: center; /* Center items horizontally */
+        align-items: center; /* Center items vertically */
+        flex-wrap: wrap; /* Allow items to wrap onto the next line if needed */
+    }
+
+    nav a {
+        display: flex;
+        font-size: large; /* Maintain large font size for tablet */
+        color: #e8d8c4e3;
+        text-decoration: none;
+        margin: 0 20px; /* Adjust margin to space items horizontally */
+        font-weight: bold;
+    }
+
+    /* Navigation hover color change */
+    nav a:hover {
+        color: #ffffff;
+    }
+
+    /* Navigation picture (icon) alignment */
+    nav img {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    video {
+        display: block;
+        margin: 0 auto;
+        width: 100%; /* Make video take full width of its container */
+        max-width: 640px; /* Set maximum width */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 15px;
+        border-radius: 20px;
+    }
+
+    body:not(.no-footer) footer {
+        font-weight: 200; /* Makes the text a little bit bold */
+        font-size: large; /* Maintain large font size */
+        border-radius: 20px;
+        display: flex; /* Flexible layout of the footer (horizontally) */
+        justify-content: space-between; /* Space items evenly */
+        align-items: center; /* Center items vertically */
+        padding: 10px;
+        color: #e8d8c4;
+        flex-wrap: wrap; /* Allow wrapping of items */
+    }
+
+    footer a {
+        color: #e8d8c4;
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+        color: #ffffff;
+    }
+
+    footer img {
+        margin-bottom: 0px;
+        display: block; /* Make the image a block element */
+        margin-left: auto; /* Center the image horizontally */
+        margin-right: auto; /* Center the image horizontally */
+    }
+}
+
+/* Mobile view: for screens with max-width 600px */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .form-row {
+        display: flex;
+        flex-direction: column; /* Stack fields vertically on mobile */
+        align-items: flex-start; /* Align form elements left */
+    }
+
+    .cell-number, .captcha {
+        width: 100%; /* Full width for input fields */
+    }
+
+    nav a {
+        font-size: medium; /* Adjust font size for mobile */
+        margin: 10px; /* Adjust margin for mobile */
+    }
+    
+    nav {
+        justify-content: space-around; /* Space items evenly on mobile */
+    }
+}
+
+/*Button on the main index page*/
+.button-86 {
+    
+    all: unset; 
+    width: 70px;
+    box-shadow: -10px 10px 8px rgba(0, 0, 0, 0.164);;
+    height: 50px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    position: relative;
+    color: #E8D8C4;
+    cursor: pointer;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    justify-content: center; /* centering within its container */
+    margin-left: 14%; /* putting the button more to the left */
+    margin-top: 5% /* putting the button upwards */
+    
+  }
+  
+  .button-86::after,
+  .button-86::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -99999;
+    transition: all .4s;
+  }
+  
+  .button-86::before {
+    transform: translate(0%, 0%);
+    width: 100%;
+    height: 100%;
+    background: #530303;
+    border-radius: 10px;
+  }
+  
+  .button-86::after {
+    transform: translate(10px, 10px);
+    width: 35px;
+    height: 35px;
+    background: #ffffff15;
+    backdrop-filter: blur(5px);
+    border-radius: 50px;
+  }
+
