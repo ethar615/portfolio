@@ -18,5 +18,7 @@ For button : https://getcssscan.com/css-buttons-examples
 External images used for this project can be found at:
 For images: https://www.freeiconspng.com/ 
 
-Project github link:
-https://github.com/ethar615/portfolio
+
+The site has been deployed in:
+1. Github repository: https://github.com/ethar615/portfolio
+2. Github Cloud hosting URL: https://ethar615.github.io/portfolio/index.html
